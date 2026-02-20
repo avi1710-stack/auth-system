@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-bg: #0f1419;
+  --color-surface: #1a2332;
+  --color-surface-elevated: #243044;
+  --color-border: #2d3a4d;
+  --color-text: #e6edf3;
+  --color-text-muted: #8b9cb3;
+  --color-accent: #3fb950;
+  --color-accent-hover: #56d364;
+  --color-accent-muted: rgba(63, 185, 80, 0.15);
+  --color-error: #f85149;
+  --color-error-bg: rgba(248, 81, 73, 0.12);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --transition: 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover {
+  color: var(--color-accent-hover);
+}
